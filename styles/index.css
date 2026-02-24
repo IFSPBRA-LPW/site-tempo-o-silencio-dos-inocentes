@@ -1,0 +1,24 @@
+:root {
+    --cor-de-fundo-principal: #070B34;
+    --cor-de-fundo-dos-cards: #1C1F4A;
+    --cor-de-fundo-do-painel-lateral (hourly): #15183C
+    --cor-de-fundo-de-inputs-e-linhas-internas: #2A2E5A
+    --cor-principal (botões): #5C6CFF
+    --cor-principal-hover (botões): #4B5AF0
+    --cor-do-texto-principal: #FFFFFF
+    --cor-do-texto-secundário: #A1A1C2
+    --fonte:inter, sans-serif
+    --peso-da-fonte-padrão: 400
+    --peso-da-fonte-médio: 500
+    --peso-da-fonte-semibold: 600
+    --peso-da-fonte-bold: 700
+    --título-principal (mobile): 2.625rem (42px)
+    --título-principal (desktop): 3.5rem (56px)
+    --temperatura-principal: 4rem (64px)
+    --títulos-de-seção: 1.25rem (20px)
+    --texto-padrão: 1rem (16px)
+    --texto-pequeno / secundário: 0.875rem (14px)
+
+
+
+}
