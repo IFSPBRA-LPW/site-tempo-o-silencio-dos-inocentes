@@ -8,74 +8,79 @@
 </head>
 <body>
     <header>
-
+        <h2>Wheater Now</h2>
+        <button>Units</button>
     </header>
+
     <main>
-        <h1>
-            How's the sky looking today?
-        </h1>
-        <section id=" pesquisa">
+        <h1>How's the sky looking today?</h1>
+
+        <section class= "search">
             <input type="text" name="place" id="lugar" placeholder="Search for a place...">
-                <button>
-                    Search
-                </button>
+            <button>Search</button>
         </section>
-        <section id="left">
-            <section class="current-weather">
-                <h1 id="title-current-weather">Berlim, Germany</h1>
-                <p>Tuesday, Aug 5, 2025</p>
-                <h1 id="date">20°</h1>
-            </section>
-            <section class="stats">
-                <div>
 
-                </div>
-                <div>
-                    
-                </div>
-                <div>
-                    
-                </div>
-                <div>
-                    
-                </div>
-            </section>
-            <section class="daily">
-                <h1 id="title-daily">Daily Forecast</h1>
-                <section id="day-of-the-week">
+        <div class="weather-container">
+            
+            <div class="weather-left">
+                <section class="current-weather">
                     <div>
-
+                        <h2>Berlim, Germany</h2>
+                        <p>Tuesday, Aug 5, 2025</p>
                     </div>
-                    <div>
+                    <div id="date">20° ☀️</div>
+                </section>
 
-                    </div>
+                <section class="stats">
                     <div>
-
+                        <p>Feels Like</p>
+                        <strong>18°</strong>
                     </div>
+                
                     <div>
-
+                        <p>Humidity</p>
+                        <strong>46%</strong>
                     </div>
+                
                     <div>
-
+                        <p>Wind</p>
+                        <strong>12 km/h</strong>
                     </div>
+        
                     <div>
-
-                    </div>
-                    <div>
-                        
+                        <p>Precipitation</p>
+                        <strong>0 mm</strong>
                     </div>
                 </section>
-            </section>
-        </section>
-        <section id="right">
-            <section class="hourly">
-                <h1>Hourly Forecast</h1>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
-        </section>
+
+                <section class="daily">
+                    <h2>Daily Forecast</h2>
+                    <div>Tue<br>20° / 14° 🌧</div>
+                    <div>Wed<br>21° / 15° 🌧</div>
+                    <div>Thu<br>24° / 14° ☀️</div>
+                    <div>Fri<br>25° / 13° 🌤</div>
+                    <div>Sat<br>21° / 15° 🌦</div>
+                    <div>Sun<br>25° / 16° 🌧</div>
+                    <div>Mon<br>24° / 15° 🌫</div>
+                </section>
+
+            </div>
+
+            <div class="weather-right">
+                <section class="hourly-forecast">
+                    <div>3 PM 🌥 20°</div>
+                    <div>4 PM 🌥 20°</div>
+                    <div>5 PM ☀️ 20°</div>
+                    <div>6 PM 🌥 19°</div>
+                    <div>7 PM 🌥 19°</div>
+                    <div>8 PM 🌫 18°</div>
+                    <div>9 PM 🌥 17°</div>
+                    <div>10 PM 🌥 17°</div>
+                </section>
+            </div>
+
+        </div>
+
     </main>
     
 </body>
