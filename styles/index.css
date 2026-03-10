@@ -142,7 +142,6 @@ section.search button {
     padding: 0.5rem;
     border-radius: 5px;
     text-align: center;
-    flex: 1;
 }
 .daily {
     margin-top: 1rem;
@@ -165,11 +164,40 @@ section.search button {
     padding: 0.5rem;
     border-radius: 5px;
     text-align: center;
-    flex: 1;
     min-width: 60px;
 }
 .hourly-forecast div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+ 
+
+@media (max-width: 425px){
+    
+.daily {
+    display: flex;
+    flex-wrap: wrap;
+}
+.daily div{
+    width: 47%;
+}
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stats div {
+   width: 47%;
+}
+
+.search {
+    flex-direction: column;
+}
+section.search input {
+    width: 100%;
+}
+
 }
