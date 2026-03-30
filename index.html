@@ -3,88 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Now</title>
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scrips/data.js"></script>
-    <script src="scrips/index.js"></script>
+    <script src="scripts/index.js" type="module" defer></script>
 </head>
 <body>
     <header>
-        <h2>Wheater Now</h2>
-        <button>Units</button>
+        <h2>☀️ Weather Now</h2>
+        <button>Units ▾</button>
     </header>
 
     <main>
         <h1>How's the sky looking today?</h1>
 
-        <section class= "search">
-            <input type="text" name="place" id="lugar" placeholder="Search for a place...">
+        <section class="search">
+            <input type="text" id="lugar" placeholder="Search for a place...">
             <button id="buttonSearch">Search</button>
         </section>
 
         <div class="weather-container">
-            
             <div class="weather-left">
-                <section class="current-weather">
+                <section class="current-weather" id="banner">
                     <div>
-                        <h2>Berlim, Germany</h2>
+                        <h2>Berlin, Germany</h2>
                         <p>Tuesday, Aug 5, 2025</p>
                     </div>
-                    <div id="date">20° ☀️</div>
+                    <div class="temp-grande">20° ☀️</div>
                 </section>
 
-                <section class="stats">
-                    <div>
-                        <p>Feels Like</p>
-                        <strong>18°</strong>
-                    </div>
-                
-                    <div>
-                        <p>Humidity</p>
-                        <strong>46%</strong>
-                    </div>
-                
-                    <div>
-                        <p>Wind</p>
-                        <strong>12 km/h</strong>
-                    </div>
-        
-                    <div>
-                        <p>Precipitation</p>
-                        <strong>0 mm</strong>
-                    </div>
+                <section class="stats" id="day-info">
+                    <div><p>Feels Like</p><strong>18°</strong></div>
+                    <div><p>Humidity</p><strong>46%</strong></div>
+                    <div><p>Wind</p><strong>11 km/h</strong></div>
+                    <div><p>Precipitation</p><strong>0 mm</strong></div>
                 </section>
 
-
-                <h2>Daily Forecast</h2>
-                <section class="daily">
-                    <div>Tue<br>20° / 14° 🌧</div>
-                    <div>Wed<br>21° / 15° 🌧</div>
-                    <div>Thu<br>24° / 14° ☀️</div>
-                    <div>Fri<br>25° / 13° 🌤</div>
-                    <div>Sat<br>21° / 15° 🌦</div>
-                    <div>Sun<br>25° / 16° 🌧</div>
-                    <div>Mon<br>24° / 15° 🌫</div>
-                </section>
-
+                <div class="daily-box">
+                    <h3>Daily forecast</h3>
+                    <section class="daily" id="daily">
+                        <div>Tue<br>20°/14° 🌧</div>
+                        <div>Wed<br>21°/15° 🌧</div>
+                        <div>Thu<br>24°/14° ☀️</div>
+                        <div>Fri<br>25°/13° 🌤</div>
+                        <div>Sat<br>21°/15° ⛈</div>
+                        <div>Sun<br>25°/16° ☁️</div>
+                        <div>Mon<br>24°/15° 🌫</div>
+                    </section>
+                </div>
             </div>
 
             <div class="weather-right">
-                <section class="hourly-forecast">
-                    <div>3 PM 🌥 20°</div>
-                    <div>4 PM 🌥 20°</div>
-                    <div>5 PM ☀️ 20°</div>
-                    <div>6 PM 🌥 19°</div>
-                    <div>7 PM 🌥 19°</div>
-                    <div>8 PM 🌫 18°</div>
-                    <div>9 PM 🌥 17°</div>
-                    <div>10 PM 🌥 17°</div>
+                <h3>Hourly forecast</h3>
+                <section class="hourly-forecast" id="hourly">
+                    <div><span>3 PM ☁️</span> <span>20°</span></div>
+                    <div><span>4 PM ☁️</span> <span>20°</span></div>
+                    <div><span>5 PM ☀️</span> <span>20°</span></div>
+                    <div><span>6 PM ☁️</span> <span>19°</span></div>
+                    <div><span>7 PM ☁️</span> <span>19°</span></div>
+                    <div><span>8 PM 🌫</span> <span>18°</span></div>
                 </section>
             </div>
-
         </div>
-
     </main>
-    
 </body>
 </html>
